@@ -19,5 +19,12 @@ class Waiter
   end
   
   def meals
-    Meal.all.select {|meal| meal.waiter}
+    Meal.all.select {|meal| meal.waiter == self }
+  end
+  
+  def best_tipper
+    best_meal_tipped = meals.sort {|meal_a , meal_b| meal_a.tip <=> meal_b.tip }
+    best_meal_tipped.customer 
+  end 
+  
 end
