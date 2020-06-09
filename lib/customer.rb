@@ -10,7 +10,7 @@ class Customer
     @@all << self 
   end
   
-  def delf.all 
+  def self.all 
     @@all
   end
   
