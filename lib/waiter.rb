@@ -2,7 +2,7 @@ class Waiter
   
   attr_accessor :name, :yrs_experince
   
-  @@all - []
+  @@all = []
   
   def initialize(nmae, yrs_experince)
     @name = name
