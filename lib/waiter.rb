@@ -23,8 +23,8 @@ class Waiter
   end
   
   def best_tipper
-    best_meal_tipped = meals.sort {|meal_a , meal_b| meal_a.tip <=> meal_b.tip }
-    best_meal_tipped.customer 
+    best_tipped_meal = meals.sort {|meal_a , meal_b| meal_a.tip <=> meal_b.tip }
+    best_tipped_meal.customer 
   end 
   
 end
